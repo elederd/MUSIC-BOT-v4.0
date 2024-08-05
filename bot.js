@@ -52,6 +52,7 @@ client.distube = new DisTube(client, {
     ],
 });
 
+client.distube.setMaxListeners(20);
 require('./events/distubeEvents')(client);
 
 const express = require("express");
